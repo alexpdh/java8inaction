@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
-import sun.applet.Main;
 
 /**
  * @author pengdh
@@ -19,7 +18,8 @@ public class Test03 {
 		List<String> nonEmpty = filter(Arrays.asList("a", "b", "c"), nonEmptyStringPredicate);
 		System.out.println("Predicate.test" + nonEmpty);
 
-		forEach(Arrays.asList(1, 2, 3, 4, 5), integer-> System.out.println("Consumer.accept" + integer));
+		forEach(Arrays.asList(1, 2, 3, 4, 5),
+				integer -> System.out.println("Consumer.accept" + integer));
 
 		List<Integer> l = map(Arrays.asList("function", "use"), s -> s.length());
 		System.out.println("Function.apply" + l);
@@ -27,11 +27,6 @@ public class Test03 {
 
 	/**
 	 * Predicate.test
-	 *
-	 * @param list
-	 * @param p
-	 * @param <T>
-	 * @return
 	 */
 	public static <T> List<T> filter(List<T> list, Predicate<T> p) {
 		List<T> results = new ArrayList<>();
@@ -45,10 +40,6 @@ public class Test03 {
 
 	/**
 	 * Consumer.accept
-	 *
-	 * @param list
-	 * @param c
-	 * @param <T>
 	 */
 	public static <T> void forEach(List<T> list, Consumer<T> c) {
 		for (T i : list) {
@@ -58,12 +49,6 @@ public class Test03 {
 
 	/**
 	 * Function.apply
-	 *
-	 * @param list
-	 * @param f
-	 * @param <T>
-	 * @param <R>
-	 * @return
 	 */
 	public static <T, R> List<R> map(List<T> list, Function<T, R> f) {
 		List<R> result = new ArrayList<>();
