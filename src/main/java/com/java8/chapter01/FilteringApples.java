@@ -1,4 +1,4 @@
-package com.java8.chaptor01;
+package com.java8.chapter01;
 
 import java.util.ArrayList;
 import java.util.Arrays;

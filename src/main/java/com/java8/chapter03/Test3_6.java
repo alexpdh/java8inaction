@@ -1,6 +1,6 @@
-package com.java8.chaptor03;
+package com.java8.chapter03;
 
-import com.java8.chaptor01.Apple;
+import com.java8.chapter01.Apple;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;

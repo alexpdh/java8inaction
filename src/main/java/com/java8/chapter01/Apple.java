@@ -1,4 +1,4 @@
-package com.java8.chaptor01;
+package com.java8.chapter01;
 
 /**
  * @author pengdh
